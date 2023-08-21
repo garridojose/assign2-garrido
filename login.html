@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<style>
+	label, input, button {
+		margin: 8px;
+	}
+</style>
+<script>
+	function onLoginBtnClick(){
+		alert(document.getElementById("username").value);
+	}
+	function onClearBtnClick(){
+		document.getElementById("username").value="";
+		document.getElementById("password").value="";
+	}
+</script>
+</head>
+<body>
+
+<label for="name">USERNAME</label>
+<input type="text" id="username" name="login_cred"><br>
+
+<label for="name">PASSWORD</label>
+<input type="text" id="password" name="login_cred"><br>
+
+<button type="submit" onClick="onLoginBtnClick()">Submit</button>
+<button type="button" onClick="onClearBtnClick()">Cancel</button>
+
+</body>
+</html>
